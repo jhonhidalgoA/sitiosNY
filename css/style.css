@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+:root {
+    --sky-blue: #4C9AFF;
+    --aqua-blue: #00B0FF;
+    --terra-blue: #2d2382;
+    --emerald-green: #28A745;
+    --lime-green: #7CFC00;
+    --burnt-orange: #FF6F00;
+    --sunset-orange: #FFA726;
+    --golden-yellow: #FFD700;
+    --sunshine-yellow: #FFEB3B;
+    --white: #ffff;
+    --pearl-white: #F2F2F2;
+    --light-grey: #E0E0E0;
+    --charcoal-black: #333333;
+    --navy-blue: #0C2161;
+    --midnight-blue: #000239;
+    --black: #000000;
+}
+
+body {
+    background: url(../img/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Merriweather", serif;
+
+}
+
+header {
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+
+    h1 {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    p {
+        font-size: 1.1em;
+
+    }
+
+}
+
+.nav {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    height: 600px;
+
+    h2 {
+        font-size: 1.75rem;
+        color: var(--white);
+        margin-top: 50px;
+
+    }
+
+    ul {
+        padding-left: 20px;
+        margin-top: 30px;
+        font-size: 1.3rem;
+
+        li {
+            margin-top: 15px;
+            color: var(--white);
+
+            a {
+                color: var(--white);
+
+
+                &:hover {
+                    text-decoration: underline;
+                    color: var(--midnight-blue);
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 200px;
+
+    .hidden {
+        display: none;
+    }
+
+    .hidden-text {
+        display: none;
+    }
+
+
+
+    article {
+        margin-bottom: 30px;
+        padding: 25px;
+        border-radius: 5px;
+        height: 430px;
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        scroll-margin-top: 150px;
+
+
+        h2 {
+            color: var(--black);
+            margin-top: 30px;
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        img {
+            display: block;
+            margin: -15px auto;
+            width: 80%;
+            max-width: 600px;
+            border: 10px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+
+        .btn {
+            background-color: var(--navy-blue);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 60px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: var(--sky-blue);
+            }
+        }
+    }
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--black);
+    padding: 20px 0;
+    margin-top: 60px;
+    text-align: center;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    p {
+        margin: 30px 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+
+
+
+
